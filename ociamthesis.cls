@@ -21,7 +21,7 @@
 \raggedbottom
 
 %define the default submitted text
-\newcommand{\submittedtext}{{A thesis submitted for the degree of}}
+\newcommand{\submittedtext}{{ }} %A thesis submitted for the degree of
 
 %
 % DECLARATIONS
@@ -69,7 +69,7 @@
 %\def\logo{{\includegraphics[width=20mm]{oxlogo}}}
 %}{}
 
-\def\logo{{\includegraphics[width=20mm]{upclogo.pdf}}}
+\def\logo{{\includegraphics[width=\textwidth]{logo-all.png}}}
 }{}
 %
 % Define text area of page and margin offsets
@@ -120,23 +120,24 @@
     \thispagestyle{empty}
   \null\vfill
   \begin{center}
-    { \Huge {\bfseries {\@title}} \par}
-{\large \vspace*{40mm} {\logo \par} \vspace*{25mm}}
-    {{\Large \@author} \par}
-{\large \vspace*{1ex}
-    {{\@college} \par}
+    {\large {\logo \par} \vspace*{25mm}}
+    {\Huge {\bfseries {\@title}} \par}
+    {{\large \vspace*{1ex} \textit{Candidate:} \\ \@author} \par}
+    {\large \vspace*{1ex}
+    {{\@college} \par
+  }
 
 %\vspace*{1ex}
 %    { TALP Research Center \par}
     
-\vspace*{1ex}
-    { Departament de Ci\`{e}ncies de la Computaci\'{o} \\  Universitat Polit\`ecnica de Catalunya \par}
+%\vspace*{1ex}
+%{ Master in High Performance Computing \\  \textsc{sissa/ictp} \par}
     
 \vspace*{1ex}
-    {Supervisors: \\  xxx \par}
+{\textit{Supervisors:} \\  Xavier Teruel (\textsc{bsc-cns}) \\ Ivan Girotto (\textsc{ictp}) \par}
 
         
-\vspace*{25mm}
+\vspace*{15mm}
     {{\submittedtext} \par}
 \vspace*{1ex}
     {\it {\@degree} \par}
